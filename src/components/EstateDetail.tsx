@@ -3,6 +3,7 @@ import { useInView } from './hooks/useInView';
 
 export function EstateDetail() {
   const { ref, isInView } = useInView();
+  const assetBase = import.meta.env.BASE_URL;
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
@@ -106,7 +107,7 @@ export function EstateDetail() {
                       className="overflow-hidden rounded-xl border border-purple-500/20 bg-[#0a0118]/70"
                     >
                       <img
-                        src={src}
+                        src={`${assetBase}${src}`}
                         alt="Estate Overview thumbnail"
                         className="h-28 w-full object-cover"
                       />

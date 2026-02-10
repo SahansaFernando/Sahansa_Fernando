@@ -4,6 +4,7 @@ import { useInView } from './hooks/useInView';
 
 export function NextGenDetail() {
   const { ref, isInView } = useInView();
+  const assetBase = import.meta.env.BASE_URL;
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
@@ -80,7 +81,7 @@ export function NextGenDetail() {
                 <h4 className="text-lg font-semibold text-white mb-2">Mood Board</h4>
                 <div className="overflow-hidden rounded-xl border border-purple-500/20">
                   <img
-                    src="images/nextgen.wireframe.png"
+                    src={`${assetBase}images/nextgen.wireframe.png`}
                     alt="Next Gen mood board"
                     className="w-full h-auto block"
                   />
@@ -92,7 +93,7 @@ export function NextGenDetail() {
                       className="overflow-hidden rounded-xl border border-purple-500/20 bg-[#0a0118]/70"
                     >
                       <img
-                        src={src}
+                        src={`${assetBase}${src}`}
                         alt={`Next Gen section ${index + 1}`}
                         className="w-full h-auto block"
                       />

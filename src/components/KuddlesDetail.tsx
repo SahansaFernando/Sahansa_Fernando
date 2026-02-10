@@ -3,6 +3,7 @@ import { useInView } from './hooks/useInView';
 
 export function KuddlesDetail() {
   const { ref, isInView } = useInView();
+  const assetBase = import.meta.env.BASE_URL;
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
@@ -102,7 +103,7 @@ export function KuddlesDetail() {
                   </p>
                 <div className="mt-4 overflow-hidden rounded-xl border border-purple-500/20">
                   <img
-                    src="images/Kuddles_wireframe.png"
+                    src={`${assetBase}images/Kuddles_wireframe.png`}
                     alt="Kuddles wireframe screens"
                     className="w-full h-auto block"
                   />
@@ -121,7 +122,7 @@ export function KuddlesDetail() {
                       className="overflow-hidden rounded-xl border border-purple-500/20 bg-[#0a0118]/70"
                     >
                       <img
-                        src={src}
+                        src={`${assetBase}${src}`}
                         alt="Kuddles social media design"
                         className="h-full w-full object-cover"
                       />

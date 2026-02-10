@@ -3,6 +3,7 @@ import { useInView } from './hooks/useInView';
 
 export function EcoRangeDetail() {
   const { ref, isInView } = useInView();
+  const assetBase = import.meta.env.BASE_URL;
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
@@ -93,7 +94,7 @@ export function EcoRangeDetail() {
 
                 <div className="overflow-hidden rounded-xl border border-purple-500/20">
                   <img
-                    src="images/eco.wireframe.png"
+                    src={`${assetBase}images/eco.wireframe.png`}
                     alt="EcoRange wireframe"
                     className="w-full h-auto block"
                   />
@@ -115,7 +116,7 @@ export function EcoRangeDetail() {
                       className="overflow-hidden rounded-xl border border-purple-500/20 bg-[#0a0118]/70"
                     >
                       <img
-                        src={src}
+                        src={`${assetBase}${src}`}
                         alt="EcoRange section"
                         className="w-full h-auto block"
                       />
