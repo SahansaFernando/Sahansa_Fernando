@@ -80,13 +80,13 @@ export function NextGenDetail() {
                 <h4 className="text-lg font-semibold text-white mb-2">Mood Board</h4>
                 <div className="overflow-hidden rounded-xl border border-purple-500/20">
                   <img
-                    src="/images/nextgen.wireframe.png"
+                    src="images/nextgen.wireframe.png"
                     alt="Next Gen mood board"
                     className="w-full h-auto block"
                   />
                 </div>
                 <div className="mt-8 space-y-6">
-                  {['/images/Hero%20section.png', '/images/Body%20section.png', '/images/Footer%20section.png'].map((src, index) => (
+                  {['images/Hero%20section.png', 'images/Body%20section.png', 'images/Footer%20section.png'].map((src, index) => (
                     <div
                       key={src}
                       className="overflow-hidden rounded-xl border border-purple-500/20 bg-[#0a0118]/70"
@@ -107,3 +107,4 @@ export function NextGenDetail() {
     </section>
   );
 }
+

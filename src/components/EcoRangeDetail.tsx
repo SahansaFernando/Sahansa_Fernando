@@ -93,7 +93,7 @@ export function EcoRangeDetail() {
 
                 <div className="overflow-hidden rounded-xl border border-purple-500/20">
                   <img
-                    src="/images/eco.wireframe.png"
+                    src="images/eco.wireframe.png"
                     alt="EcoRange wireframe"
                     className="w-full h-auto block"
                   />
@@ -103,12 +103,12 @@ export function EcoRangeDetail() {
                 <div className="h-20 sm:h-28" />
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {[
-                    '/images/eco.header.png',
-                    '/images/eco.about.png',
-                    '/images/eco.product.png',
-                    '/images/eco.why.png',
-                    '/images/eco.contact.png',
-                    '/images/eco.footer.png',
+                    'images/eco.header.png',
+                    'images/eco.about.png',
+                    'images/eco.product.png',
+                    'images/eco.why.png',
+                    'images/eco.contact.png',
+                    'images/eco.footer.png',
                   ].map((src) => (
                     <div
                       key={src}
@@ -130,3 +130,4 @@ export function EcoRangeDetail() {
     </section>
   );
 }
+

@@ -11,7 +11,7 @@ export function Hero() {
   };
 
   const downloadResume = () => {
-    window.location.href = '/images/Sahansa%20Fernando.pdf';
+    window.location.href = 'images/Sahansa%20Fernando.pdf';
   };
 
   return (
@@ -157,3 +157,4 @@ export function Hero() {
     </section>
   );
 }
+

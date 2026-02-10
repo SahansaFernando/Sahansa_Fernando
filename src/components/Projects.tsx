@@ -9,7 +9,7 @@ const projects = [
     id: 2,
     title: 'Kuddles',
     summary: 'A mobile app that connects working parents with trusted nannies and provides real-time childcare updates.',
-    image: '/images/kuddles.logo.jpg',
+    image: 'images/kuddles.logo.jpg',
     tags: ['Mobile App ', 'Project Status: In progress'],
     gradient: 'from-pink-500 to-orange-600',
     detailPath: '/projects/kuddles',
@@ -26,7 +26,7 @@ const projects = [
     id: 1,
     title: 'Estate Agent',
     summary: 'A client-side web app that lets users search and filter property listings with an intuitive, responsive experience inspired by modern real estate platforms.',
-    image: '/images/estate.logo.png',
+    image: 'images/estate.logo.png',
     tags: ['Frontend', 'Filtering Logic', 'Testing'],
     gradient: 'from-purple-500 to-blue-600',
     detailPath: '/projects/estate',
@@ -35,7 +35,7 @@ const projects = [
     id: 3,
     title: 'NEXT GEN',
     summary: 'A high-fidelity landing page UI concept for a virtual reality product brand, designed to showcase VR headsets and immersive experiences. ',
-    image: '/images/virtual.logo.png',
+    image: 'images/virtual.logo.png',
     tags: ['Requirements', 'UX Research', 'UI Design'],
     gradient: 'from-green-500 to-teal-600',
     detailPath: '/projects/next-gen',
@@ -44,7 +44,7 @@ const projects = [
     id: 4,
     title: 'Eco Range',
     summary: 'Designed a responsive website UI for an agricultural platform focused on cucumber cultivation, using Figma AI with prompt-driven design and iterative refinement.',
-    image: '/images/eco.logo.png',
+    image: 'images/eco.logo.png',
     tags: ['UI Design', 'Figma AI'],
     gradient: 'from-emerald-500 to-lime-600',
     detailPath: '/projects/eco-range',
@@ -173,3 +173,4 @@ export function Projects() {
     </section>
   );
 }
+

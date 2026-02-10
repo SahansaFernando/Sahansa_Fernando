@@ -102,7 +102,7 @@ export function KuddlesDetail() {
                   </p>
                 <div className="mt-4 overflow-hidden rounded-xl border border-purple-500/20">
                   <img
-                    src="/images/Kuddles_wireframe.png"
+                    src="images/Kuddles_wireframe.png"
                     alt="Kuddles wireframe screens"
                     className="w-full h-auto block"
                   />
@@ -115,7 +115,7 @@ export function KuddlesDetail() {
                   These promotional designs were developed using Canva.
                 </p>
                 <div className="grid gap-4 sm:grid-cols-2">
-                  {['/images/kuddles.social1.jpg', '/images/kuddels.social2.jpg'].map((src) => (
+                  {['images/kuddles.social1.jpg', 'images/kuddels.social2.jpg'].map((src) => (
                     <div
                       key={src}
                       className="overflow-hidden rounded-xl border border-purple-500/20 bg-[#0a0118]/70"
@@ -137,3 +137,4 @@ export function KuddlesDetail() {
     </section>
   );
 }
+

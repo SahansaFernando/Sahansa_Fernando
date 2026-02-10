@@ -100,7 +100,7 @@ export function EstateDetail() {
                   Key UI states from the Estate Agent application.
                 </p>
                 <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
-                  {['/images/estate.1.png', '/images/estate.2.png', '/images/estate.3.png', '/images/estate.4.png'].map((src) => (
+                  {['images/estate.1.png', 'images/estate.2.png', 'images/estate.3.png', 'images/estate.4.png'].map((src) => (
                     <div
                       key={src}
                       className="overflow-hidden rounded-xl border border-purple-500/20 bg-[#0a0118]/70"
@@ -121,3 +121,4 @@ export function EstateDetail() {
     </section>
   );
 }
+
