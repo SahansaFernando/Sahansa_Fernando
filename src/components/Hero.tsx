@@ -3,6 +3,8 @@ import { motion } from 'motion/react';
 import { Button } from './ui/button';
 
 export function Hero() {
+  const resumePath = `${import.meta.env.BASE_URL}images/Sahansa%20Fernando.pdf`;
+
   const scrollToProjects = () => {
     const element = document.getElementById('projects');
     if (element) {
@@ -11,7 +13,7 @@ export function Hero() {
   };
 
   const downloadResume = () => {
-    window.location.href = 'images/Sahansa%20Fernando.pdf';
+    window.location.href = resumePath;
   };
 
   return (

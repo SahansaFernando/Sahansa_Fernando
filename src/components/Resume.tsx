@@ -5,6 +5,7 @@ import { useInView } from './hooks/useInView';
 
 export function Resume() {
   const { ref, isInView } = useInView();
+  const resumePath = `${import.meta.env.BASE_URL}images/Sahansa%20Fernando.pdf`;
 
   return (
     <section id="resume" className="py-20 px-4 sm:px-6 lg:px-8 relative">
@@ -38,7 +39,7 @@ export function Resume() {
                 className="relative bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg border-0 overflow-hidden group"
                 asChild
               >
-                <a href="images/Sahansa%20Fernando.pdf" download>
+                <a href={resumePath} download>
                   <span className="relative z-10 inline-flex items-center gap-2">
                     <Download size={20} />
                     Download Resume (PDF)
